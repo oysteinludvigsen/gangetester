@@ -1,0 +1,25 @@
+{
+  "name": "Gangetester",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "waitFor": "postCreateCommand",
+  "postCreateCommand": "npm install",
+  "postAttachCommand": {
+    "vite": "npm run dev"
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Gangetester (Vite)",
+      "onAutoForward": "openPreview",
+      "visibility": "public"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}

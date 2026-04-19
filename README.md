@@ -19,6 +19,13 @@ progresjon lagres i nettleseren (localStorage).
 
 ## Kom i gang
 
+### GitHub Codespaces
+
+Åpne repoet i en Codespace — `npm install` kjøres automatisk, og `npm run dev`
+starter ved hver attach. Port 5173 åpnes i preview-panelet når Vite er klar.
+
+### Lokalt
+
 ```bash
 npm install
 npm run dev
